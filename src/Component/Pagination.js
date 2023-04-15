@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./Pagination.css"
 
-export default function Pagination({nPages,currentPage, setCurrentPage}){
+export default function Pagination({nPages,currentPage, setCurrentPage ,select,setData  , data}){
     const pageNumbers = [...Array(nPages+1).keys()].slice(1);
     const nextPage = () => {
         if(currentPage !== nPages) 
@@ -11,9 +11,14 @@ export default function Pagination({nPages,currentPage, setCurrentPage}){
         if(currentPage !== 1) 
             setCurrentPage(currentPage - 1)
     }
+    function deleteMany(){
+for(let x of select){
+    setData(data.filter(a=>a.id!==x.id))
+}
+    }
 
     return<>
-      <button id="delete-all-select">Delete Selected</button>
+      <button id="delete-all-select" onClick={deleteMany}>Delete Selected</button>
     <nav id="nav-container">
    
         <ul>
