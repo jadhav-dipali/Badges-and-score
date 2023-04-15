@@ -1,0 +1,38 @@
+#search-input{
+    height: 30px;
+    width: 60%;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 30px;
+   margin-left: 20%;
+}
+#tabel-user{
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+th,td,tr,table{
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 7px;
+    font-size: medium;
+    font-weight:500 ;
+}
+#select-column{
+    text-align: center;
+}
+#delete-icon{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+
+}
+#edit-icon{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%; 
+}
+#icon-column{
+    text-align: center;
+}
