@@ -31,9 +31,9 @@ for(let x of select){
                 </li>
             ))
         }
-        <li>
+
         <li><a href="#" onClick={nextPage}>Next</a></li> 
-        </li>
+    
         </ul>
        
     </nav>
